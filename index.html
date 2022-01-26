@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Frontend Mentor | Calculator app</title>
+  
+
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" id="switcher-id" href="">
+</head>
+<body>
+
+  <div class="container">
+    <p class="nums">123</p>
+    <div class="row display">
+      <div class="calc-header">
+        <p class="calc">calc</p>
+        <div class="theme-container">
+          <p class="theme">theme</p>
+
+        <div class="theme-toggle theme-switches">
+          <label class="custom-radio-button">
+            <input data-theme="original" class="switch" id="switch-1" name="toggle-state" type="radio" checked />
+            <span class="checkmark"></span>
+          </label>
+        
+          <label class="custom-radio-button">
+            <input data-theme="white" class="switch" id="switch-2" name="toggle-state" type="radio" />
+            <span class="checkmark"></span>
+          </label>
+        
+          <label class="custom-radio-button">
+            <input data-theme="neon" class="switch" id="switch-3" name="toggle-state" type="radio" />
+            <span class="checkmark"></span>
+          </label>
+        </div>
+        </div>
+
+      </div>
+      <input class = "display-box" type = "text" id = "result" disabled /> 
+    </div>
+    
+    <div class="row">
+      <table class = "calculator" >
+        <tr>
+            <td> <input class = "button" type = "button" value = "7" onclick = "display('7')" /> </td>
+            <td> <input class = "button" type = "button" value = "8" onclick = "display('8')" /> </td>
+            <td> <input class = "button" type = "button" value = "9" onclick = "display('9')" /> </td>
+            <td> <input class = "button grey" type = "button" value = "DEL" onclick = "removeCharacter()" /> </td>
+        </tr>
+        <tr>
+            <td> <input class = "button" type = "button" value = "4" onclick = "display('4')" /> </td>
+            <td> <input class = "button" type = "button" value = "5" onclick = "display('5')" /> </td>
+            <td> <input class = "button" type = "button" value = "6" onclick = "display('6')" /> </td>
+            <td> <input class = "button" type = "button" value = "+" onclick = "display('+')" /> </td>
+        </tr>
+        <tr>
+            <td> <input class = "button" type = "button" value = "1" onclick = "display('1')" /> </td>
+            <td> <input class = "button" type = "button" value = "2" onclick = "display('2')" /> </td>
+            <td> <input class = "button" type = "button" value = "3" onclick = "display('3')" /> </td>
+            <td> <input class = "button" type = "button" value = "-" onclick = "display('-')" /> </td>
+        </tr>
+        <tr>
+            <td> <input class = "button" type = "button" value = "." onclick = "display('.')" /> </td>
+            <td> <input class = "button" type = "button" value = "0" onclick = "display('0')" /> </td>
+            <td> <input class = "button" type = "button" value = "/" onclick = "display('/')" /> </td>
+            <td> <input class = "button" type = "button" value = "x" onclick = "display('*')" /> </td>
+        </tr>
+    
+        <tr>
+            <td colspan="2"> <input class = "button bottom grey clear" type = "button" value = "RESET" onclick = "clearScreen()"> </td>
+            <td colspan="2"> <input class = "button bottom red" type = "button" value = "=" onclick = "calculate()"> </td>
+        </tr>
+      </table>
+    </div>
+  </div>
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Emilia Kichukova</a>.
+  </div>
+
+ <script type="text/javascript" src="script.js"></script>
+</body>
+</html>
+
+
+<!-- <div class="theme-switches">
+
+          <div data-theme="white" class="switch" id="switch-1"></div>
+
+          <div data-theme="neon" class="switch" id="switch-2"></div>
+
+          <div data-theme="original" class="switch" id="switch-3"></div>
+
+        </div> -->

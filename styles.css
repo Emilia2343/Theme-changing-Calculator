@@ -1,0 +1,196 @@
+/* original */
+
+/* @import url('https://fonts.google.com/specimen/Spartan'); */
+
+html{
+    background-color: hsl(222, 26%, 31%);
+}
+
+
+.container{
+    display: grid;
+    margin-top: 5%;
+}
+
+@media screen and (max-width:600px) {
+    .container{
+        margin-left: 15%;
+    }
+}
+
+.row{
+    justify-self: center;
+    align-self: center;
+}
+
+.display{
+    width: 400px;
+}
+
+.calc{
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+    font-weight: bold;
+    font-size: large;
+}
+
+.theme{
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+    margin-left: auto;
+    
+}
+
+.calc-header{
+    display: flex;
+    width: 400px;
+    justify-content: space-between;
+}
+
+.nums{
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+    letter-spacing: 8px;
+    text-align: center;
+    transform: translateY(31px) translateX(174px);
+}
+
+/* :root {
+    --white: #ffffff;
+    --neon: #092fa0;
+    --original: #6b6b6b;
+
+  }
+
+  .theme-switches {
+    display: flex;
+    justify-content: end;
+  }
+
+  .switch {
+    border: 2px solid black;
+    border-radius: 50px;
+    height: 15px;
+    width: 15px;
+    margin: 10px;
+    cursor: pointer;
+  }
+
+  #switch-1 {
+    background-color: var(--white);
+  }
+  
+  #switch-2 {
+    background-color: var(--neon);
+  }
+  
+  #switch-3 {
+    background-color: var(--original);
+  }
+   */
+
+
+   .theme-toggle {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    border: 2px solid hsl(249, 100%, 1%);
+    width: 57px;
+    height: fit-content;
+    align-self: center;
+    background-color: hsl(246, 84%, 10%);
+    border-radius: 1em;
+}
+
+.custom-radio-button {
+    width: 20px;
+    height: 20px;
+    /* border: 2px solid #444; */
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+
+ .custom-radio-button input {
+    display: none;
+ }
+
+ .custom-radio-button .checkmark {
+    width: calc(100% - 6px);
+    height: calc(100% - 6px);
+    background-color: hsl(6, 63%, 50%);
+    border-radius: 50%;
+    display: inline-block;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+ }
+
+ .custom-radio-button input:checked + .checkmark {
+    opacity: 1;
+    display: inline-block;
+ }
+
+ .theme-container{
+     display: flex;
+     justify-content: space-between;
+ }
+
+
+
+.display-box{
+    width: 400px;
+    height: 85px;
+    border-radius: 0.5em;
+    box-sizing: border-box;
+    margin-bottom: 15px;
+    background-color: hsl(246, 84%, 10%);
+    box-shadow: inset rgba(0, 0, 0, 0.19) 5px 10px 20px;
+    color: white;
+    font-size: xx-large;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.calculator {
+    padding: 10px;
+    border: 3px solid hsl(244, 88%, 3%);
+    border-radius: 1em;
+    height: 380px;
+    width: 400px;
+    background-color: hsl(246, 84%, 10%);
+    table-layout: fixed
+   }
+
+/* buttons start */
+
+   .button {
+    background-color: hsl(0, 0, 100%);
+    color: hsl(221, 14%, 31%);
+    box-shadow: 0px 3px hsl(28, 16%, 65%);
+    width: 87%;
+    border: none;
+    border-radius: 10px;
+    height: 66%;
+    outline: none;
+    font-size: 1.5em;
+    font-weight: bold;
+   }
+
+   .red{
+        color: white;
+        background-color: red;
+        box-shadow: 0px 3px hsl(6, 70%, 34%);
+   }
+
+   .grey{
+       color: white;
+       background-color: hsl(225, 21%, 49%);
+       box-shadow: 0px 3px hsl(223, 30%, 30%);
+   }
+  
+   .bottom{
+       width: 95%;
+   }
+
+    .attribution a { color: rgb(207, 40, 40) }
